@@ -1,0 +1,47 @@
+{
+  "name": "scorpion-js",
+  "version": "1.0.0",
+  "description": "Express.js loyihalari uchun professional va qatlamli (Layered/MVC) scaffolding CLI generatori",
+  "main": "bin/cli.js",
+  "bin": {
+    "scorpion-js": "bin/cli.js"
+  },
+  "type": "module",
+  "files": [
+    "bin",
+    "templates",
+    "README.md"
+  ],
+  "keywords": [
+    "express",
+    "cli",
+    "scaffold",
+    "generator",
+    "boilerplate",
+    "template",
+    "mvc",
+    "layered-architecture",
+    "jwt",
+    "mongoose",
+    "prisma"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "chalk": "^5.4.1",
+    "fs-extra": "^11.3.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "joi": "^18.2.9",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1"
+  }
+}
