@@ -32,7 +32,6 @@ if (config.env !== 'test') {
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-app.use('/api/v1', routes);
 app.use('/api', routes);
 
 // Logo rasmini uzatish (Fallback)
@@ -47,7 +46,7 @@ app.get('/', (req, res) => {
       name: 'Scorpion.js',
       status: 'online',
       message: 'Express REST API muvaffaqiyatli ishlamoqda (CommonJS)',
-      docs: '/api/v1/health',
+      docs: '/api/health',
     });
   }
 

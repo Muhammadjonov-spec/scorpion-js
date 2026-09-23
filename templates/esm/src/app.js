@@ -45,8 +45,8 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Asosiy API yo'nalishlari
-app.use('/api/v1', routes);
 app.use('/api', routes);
+
 
 // Logo rasmini uzatish (Fallback)
 app.get('/logo.png', (req, res) => {
@@ -60,7 +60,7 @@ app.get('/', (req, res) => {
       name: 'Scorpion.js',
       status: 'online',
       message: 'Express REST API muvaffaqiyatli ishlamoqda',
-      docs: '/api/v1/health',
+      docs: '/api/health',
     });
   }
 
