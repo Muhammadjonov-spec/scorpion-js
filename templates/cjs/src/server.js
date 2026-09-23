@@ -10,9 +10,9 @@ const startServer = async () => {
 
     server = app.listen(config.port, () => {
       console.log(`=================================================`);
-      console.log(`🚀 Server http://localhost:${config.port} da ishga tushdi`);
-      console.log(`⚙️  Muhit: ${config.env}`);
-      console.log(`🩺 Health check: http://localhost:${config.port}/api/v1/health`);
+      console.log(`Server: http://localhost:${config.port}`);
+      console.log(`Environment: ${config.env}`);
+      console.log(`Health check: http://localhost:${config.port}/api/v1/health`);
       console.log(`=================================================`);
     });
   } catch (error) {
