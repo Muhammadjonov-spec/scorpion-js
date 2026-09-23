@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <title>Scorpion.js - Progressive Express Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #111620;
+      background-image: 
+        radial-gradient(circle at 50% 25%, rgba(229, 169, 82, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(229, 169, 82, 0.05) 0%, transparent 40%);
+      color: #F1F5F9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-wrapper {
+      position: relative;
+      margin-bottom: 28px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .scorpion-img {
+      width: 210px;
+      height: 210px;
+      border-radius: 40px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 40px rgba(229, 169, 82, 0.25);
+      border: 2px solid rgba(229, 169, 82, 0.4);
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .scorpion-img:hover {
+      transform: scale(1.03);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      color: #E5A952;
+    }
+    p.tagline {
+      color: #94A3B8;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      max-width: 480px;
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34D399;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 26px;
+      letter-spacing: 0.3px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #10B981;
+      animation: pulseDot 2s infinite;
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+    .code-box {
+      background: #19202E;
+      border: 1px solid #283347;
+      border-radius: 12px;
+      padding: 13px 22px;
+      font-family: 'Fira Code', Consolas, Monaco, monospace;
+      font-size: 13px;
+      color: #E2E8F0;
+      margin-bottom: 26px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .code-box code {
+      color: #E5A952;
+      font-weight: 600;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: #E5A952;
+      color: #111620;
+      box-shadow: 0 4px 14px rgba(229, 169, 82, 0.35);
+    }
+    .btn-primary:hover {
+      background: #D9963B;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #1E2633;
+      color: #E2E8F0;
+      border: 1px solid #2E3A4E;
+    }
+    .btn-secondary:hover {
+      background: #2E3A4E;
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    footer {
+      margin-top: 36px;
+      color: #64748B;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-wrapper">
+      <img src="/logo.png" alt="Scorpion Logo" class="scorpion-img">
+    </div>
+    <h1>SCORPION.JS</h1>
+    <p class="tagline">A progressive Express.js framework starter for building efficient, scalable and enterprise-ready backend applications.</p>
+    <div class="status-pill">
+      <span class="dot"></span> Server is running online
+    </div>
+    <div class="code-box">
+      <span>To get started, edit <code>src/routes/index.js</code></span>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="/api/v1/health">API Health Check</a>
+      <a class="btn btn-secondary" href="https://github.com/Muhammadjonov-spec/scorpion-js" target="_blank">Documentation</a>
+    </div>
+    <footer>Scorpion.js • MIT Licensed</footer>
+  </div>
+</body>
+</html>
