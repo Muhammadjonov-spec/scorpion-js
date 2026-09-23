@@ -1,6 +1,6 @@
 {
   "name": "scorpion-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express.js loyihalari uchun professional va qatlamli (Layered/MVC) scaffolding CLI generatori",
   "main": "bin/cli.js",
   "bin": {
