@@ -215,7 +215,7 @@ async function run() {
     }
     console.log(chalk.cyan('  npm run dev'));
     console.log('\n' + chalk.gray('Server: http://localhost:5000'));
-    console.log(chalk.gray('Sog‘lik tekshiruvi (Health): http://localhost:5000/api/v1/health\n'));
+    console.log(chalk.gray('Sog‘lik tekshiruvi (Health): http://localhost:5000/api/health\n'));
   } catch (error) {
     spinner.fail(chalk.red('Loyiha yaratishda xatolik yuz berdi:'));
     console.error(error);

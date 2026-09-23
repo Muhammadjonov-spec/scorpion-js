@@ -41,11 +41,11 @@ src/
 
 | Metod | Manzil | Ta'rif | Himoya |
 | :--- | :--- | :--- | :--- |
-| `GET` | `/api/v1/health` | Server holatini tekshirish | Ochiq |
-| `POST` | `/api/v1/auth/register` | Yangi foydalanuvchini ro'yxatdan o'tkazish | Ochiq |
-| `POST` | `/api/v1/auth/login` | Tizimga kirish (JWT token olish) | Ochiq |
-| `GET` | `/api/v1/auth/me` | Joriy foydalanuvchi ma'lumotlari | Bearer Token |
-| `GET` | `/api/v1/users` | Barcha foydalanuvchilar ro'yxati | Admin |
-| `GET` | `/api/v1/users/:id` | Bitta foydalanuvchi | Bearer Token |
-| `PUT` | `/api/v1/users/:id` | Foydalanuvchini tahrirlash | Bearer Token |
-| `DELETE` | `/api/v1/users/:id` | Foydalanuvchini o'chirish | Admin |
+| `GET` | `/api/health` | Server holatini tekshirish | Ochiq |
+| `POST` | `/api/auth/register` | Yangi foydalanuvchini ro'yxatdan o'tkazish | Ochiq |
+| `POST` | `/api/auth/login` | Tizimga kirish (JWT token olish) | Ochiq |
+| `GET` | `/api/auth/me` | Joriy foydalanuvchi ma'lumotlari | Bearer Token |
+| `GET` | `/api/users` | Barcha foydalanuvchilar ro'yxati | Admin |
+| `GET` | `/api/users/:id` | Bitta foydalanuvchi | Bearer Token |
+| `PUT` | `/api/users/:id` | Foydalanuvchini tahrirlash | Bearer Token |
+| `DELETE` | `/api/users/:id` | Foydalanuvchini o'chirish | Admin |
