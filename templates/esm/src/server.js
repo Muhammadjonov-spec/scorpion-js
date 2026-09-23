@@ -13,7 +13,7 @@ const startServer = async () => {
       console.log(`=================================================`);
       console.log(`Server: http://localhost:${config.port}`);
       console.log(`Environment: ${config.env}`);
-      console.log(`Health check: http://localhost:${config.port}/api/v1/health`);
+      console.log(`Health check: http://localhost:${config.port}/api/health`);
       console.log(`=================================================`);
     });
   } catch (error) {

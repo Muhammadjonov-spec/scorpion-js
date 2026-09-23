@@ -32,9 +32,14 @@ if (config.env !== 'test') {
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+// Asosiy API yo'nalishlari (/api va /api/v1)
 app.use('/api', routes);
+app.use('/api/v1', routes);
 
-// Logo rasmini uzatish (Fallback)
+// Favicon va Logo rasmini uzatish
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/logo.png'));
+});
 app.get('/logo.png', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/logo.png'));
 });
