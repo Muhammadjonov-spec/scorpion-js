@@ -1,15 +1,15 @@
-# 🦂 scorpion-js
+# scorpion-js
 
 Express.js loyihalarini har safar noldan yozmaslik, papkalarni qayta-qayta tuzmaslik va standart kutubxonalarni qayta sozlamaslik uchun yaratilgan **Scaffolding CLI Generator** va **GitHub Shablon Tizimi**.
 
 ---
 
-## 🌟 Imkoniyatlar
+## Imkoniyatlar
 
-- ⚡ **Bir lahzada tayyor backend**: bitta buyruq bilan to'liq ishlaydigan Express REST API.
-- 🔄 **Modul tizimini tanlash**: O'rnatish jarayonida **ES Modules** (`import/export`) yoki **CommonJS** (`require/exports`) tanlash imkoniyati.
-- 🗄️ **Ma'lumotlar bazasi integratsiyasi**: **MongoDB (Mongoose)**, **PostgreSQL/MySQL (Prisma ORM)** yoki toza arxitektura tanlash.
-- 🧱 **Professional Qatlamli Arxitektura (Layered/MVC)**:
+- **Bir lahzada tayyor backend**: bitta buyruq bilan to'liq ishlaydigan Express REST API.
+- **Modul tizimini tanlash**: O'rnatish jarayonida **ES Modules** (`import/export`) yoki **CommonJS** (`require/exports`) tanlash imkoniyati.
+- **Ma'lumotlar bazasi integratsiyasi**: **MongoDB (Mongoose)**, **PostgreSQL/MySQL (Prisma ORM)** yoki toza arxitektura tanlash.
+- **Professional Qatlamli Arxitektura (Layered/MVC)**:
   - `controllers/` - HTTP so'rov/javob boshqaruvi
   - `services/` - Biznes mantiq qatlami (Business Logic)
   - `models/` - Ma'lumotlar bazasi sxemalari (Mongoose / Prisma)
@@ -17,13 +17,13 @@ Express.js loyihalarini har safar noldan yozmaslik, papkalarni qayta-qayta tuzma
   - `middlewares/` - Autentifikatsiya, validatsiya va xatolar ushlagichi
   - `utils/` - `ApiError`, `ApiResponse`, `asyncHandler`, `jwt`
   - `config/` - Muhit o'zgaruvchilari (`.env`) va ma'lumotlar bazasi ulanishi
-- 🔒 **Xavfsizlik va Utilitlar**: `cors`, `helmet`, `morgan`, `express-rate-limit`, `joi` validatsiyasi.
-- 🔑 **JWT Autentifikatsiya**: Parollarni avtomatik xeshlash (`bcryptjs`), JWT token yaratish va tekshirish, Role-based ruxsatlar (`protect`, `restrictTo('admin')`).
-- 🛠️ **Avtomatlashtirish**: Avtomatik `npm install` va `git init`.
+- **Xavfsizlik va Utilitlar**: `cors`, `helmet`, `morgan`, `express-rate-limit`, `joi` validatsiyasi.
+- **JWT Autentifikatsiya**: Parollarni avtomatik xeshlash (`bcryptjs`), JWT token yaratish va tekshirish, Role-based ruxsatlar (`protect`, `restrictTo('admin')`).
+- **Avtomatlashtirish**: Avtomatik `npm install` va `git init`.
 
 ---
 
-## 📦 Foydalanish (NPX orqali)
+## Foydalanish (NPX orqali)
 
 ```bash
 npx scorpion-js
@@ -44,7 +44,7 @@ So'rovlardan so'ng barcha kerakli fayllar avtomatik yaratiladi va sozlanadi!
 
 ---
 
-## 🐙 GitHub'dan Foydalanish (Git Clone / Template)
+## GitHub'dan Foydalanish (Git Clone / Template)
 
 Ushbu repozitoriyni GitHub'da **"Template repository"** sifatida belgilab qo'yganingizdan so'ng:
 
@@ -59,7 +59,7 @@ Ushbu repozitoriyni GitHub'da **"Template repository"** sifatida belgilab qo'yga
 
 ---
 
-## 🛠️ Lokal Sinash (Local Development & Testing)
+## Lokal Sinash (Local Development & Testing)
 
 O'z kompyuteringizda ushbu CLI'ni sinab ko'rish:
 
@@ -76,6 +76,6 @@ scorpion-js yangi-test-loyiha
 
 ---
 
-## 📖 To'liq Qo'llanma
+## To'liq Qo'llanma
 
 NPM va GitHub'ga qanday chiqarish, hisob ochish va versiyalash bo'yicha bosqichma-bosqich qo'llanma uchun **[PUBLISH_GUIDE.md](./PUBLISH_GUIDE.md)** fayliga qarang.
